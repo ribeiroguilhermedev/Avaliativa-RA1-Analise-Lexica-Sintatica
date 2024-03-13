@@ -1,0 +1,81 @@
+Expression: ()
+Error: no viable alternative at input '()'
+
+Expression: (1 +)
+Error: no viable alternative at input '(1+'
+
+Expression: (2 65)
+Error: missing {'+', '-', '*', '/', '^', '%', '|'} at ')'
+
+Expression: ((2 3 +) 4 MEM)
+Error: mismatched input 'MEM' expecting {'+', '-', '*', '/', '^', '%', '|'}
+
+Expression: ((2 3 *) 4 MEM)
+Error: mismatched input 'MEM' expecting {'+', '-', '*', '/', '^', '%', '|'}
+
+Expression: ((2 3 /) 4 MEM)
+Error: mismatched input 'MEM' expecting {'+', '-', '*', '/', '^', '%', '|'}
+
+Expression: ((2 3 -) 4 MEM)
+Error: mismatched input 'MEM' expecting {'+', '-', '*', '/', '^', '%', '|'}
+
+Expression: ((2 3 ^) 4 MEM)
+Error: mismatched input 'MEM' expecting {'+', '-', '*', '/', '^', '%', '|'}
+
+Expression: ((2 3 %) 4 MEM)
+Error: mismatched input 'MEM' expecting {'+', '-', '*', '/', '^', '%', '|'}
+
+Expression: ((2 3 +) 4 RES)
+Error: mismatched input 'RES' expecting {'+', '-', '*', '/', '^', '%', '|'}
+
+Expression: ((2 3 *) 4 RES)
+Error: mismatched input 'RES' expecting {'+', '-', '*', '/', '^', '%', '|'}
+
+Expression: ((2 3 /) 4 RES)
+Error: mismatched input 'RES' expecting {'+', '-', '*', '/', '^', '%', '|'}
+
+Expression: ((2 3 -) 4 RES)
+Error: mismatched input 'RES' expecting {'+', '-', '*', '/', '^', '%', '|'}
+
+Expression: ((2 3 ^) 4 RES)
+Error: mismatched input 'RES' expecting {'+', '-', '*', '/', '^', '%', '|'}
+
+Expression: ((2 3 %) 4 RES)
+Error: mismatched input 'RES' expecting {'+', '-', '*', '/', '^', '%', '|'}
+
+Expression: (((2 3 +) 4 MEM) 5 +)
+Error: no viable alternative at input '(((23+)4MEM'
+
+Expression: (((2 3 *) 4 MEM) 5 +)
+Error: no viable alternative at input '(((23*)4MEM'
+
+Expression: (((2 3 /) 4 MEM) 5 +)
+Error: no viable alternative at input '(((23/)4MEM'
+
+Expression: (((2 3 -) 4 MEM) 5 +)
+Error: no viable alternative at input '(((23-)4MEM'
+
+Expression: (((2 3 ^) 4 MEM) 5 +)
+Error: no viable alternative at input '(((23^)4MEM'
+
+Expression: (((2 3 %) 4 MEM) 5 +)
+Error: no viable alternative at input '(((23%)4MEM'
+
+Expression: (((2 3 +) 4 RES) 5 +)
+Error: no viable alternative at input '(((23+)4RES'
+
+Expression: (((2 3 *) 4 RES) 5 +)
+Error: no viable alternative at input '(((23*)4RES'
+
+Expression: (((2 3 /) 4 RES) 5 +)
+Error: no viable alternative at input '(((23/)4RES'
+
+Expression: (((2 3 -) 4 RES) 5 +)
+Error: no viable alternative at input '(((23-)4RES'
+
+Expression: (((2 3 ^) 4 RES) 5 +)
+Error: no viable alternative at input '(((23^)4RES'
+
+Expression: (((2 3 %) 4 RES) 5 +)
+Error: no viable alternative at input '(((23%)4RES'
+

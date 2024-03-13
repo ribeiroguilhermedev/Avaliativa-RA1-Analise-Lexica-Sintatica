@@ -1,0 +1,66 @@
+Expression: (7.5 2.5 +)
+Tree: (expr ( (operationExpr (item 7.5) (item 2.5) (op +)) ))
+
+Expression: (10 5 -)
+Tree: (expr ( (operationExpr (item 10) (item 5) (op -)) ))
+
+Expression: (4 6 *)
+Tree: (expr ( (operationExpr (item 4) (item 6) (op *)) ))
+
+Expression: (8 2 /)
+Tree: (expr ( (operationExpr (item 8) (item 2) (op /)) ))
+
+Expression: (9 4 %)
+Tree: (expr ( (operationExpr (item 9) (item 4) (op %)) ))
+
+Expression: (2 3 ^)
+Tree: (expr ( (operationExpr (item 2) (item 3) (op ^)) ))
+
+Expression: ((3 3 +) 5 *)
+Tree: (expr ( (operationExpr (item ( (operationExpr (item 3) (item 3) (op +)) )) (item 5) (op *)) ))
+
+Expression: ((3 3 +) (10 5 -) *)
+Tree: (expr ( (operationExpr (item ( (operationExpr (item 3) (item 3) (op +)) )) (item ( (operationExpr (item 10) (item 5) (op -)) )) (op *)) ))
+
+Expression: ((3 3 +) ((4 ((4 66 +) 4 -) +) 5 -) *)
+Tree: (expr ( (operationExpr (item ( (operationExpr (item 3) (item 3) (op +)) )) (item ( (operationExpr (item ( (operationExpr (item 4) (item ( (operationExpr (item ( (operationExpr (item 4) (item 66) (op +)) )) (item 4) (op -)) )) (op +)) )) (item 5) (op -)) )) (op *)) ))
+
+Expression: ((2 3 +) 4 *)
+Tree: (expr ( (operationExpr (item ( (operationExpr (item 2) (item 3) (op +)) )) (item 4) (op *)) ))
+
+Expression: ((2 3 *) 4 *)
+Tree: (expr ( (operationExpr (item ( (operationExpr (item 2) (item 3) (op *)) )) (item 4) (op *)) ))
+
+Expression: ((2 3 /) 4 *)
+Tree: (expr ( (operationExpr (item ( (operationExpr (item 2) (item 3) (op /)) )) (item 4) (op *)) ))
+
+Expression: ((2 3 -) 4 *)
+Tree: (expr ( (operationExpr (item ( (operationExpr (item 2) (item 3) (op -)) )) (item 4) (op *)) ))
+
+Expression: ((2 3 ^) 4 *)
+Tree: (expr ( (operationExpr (item ( (operationExpr (item 2) (item 3) (op ^)) )) (item 4) (op *)) ))
+
+Expression: ((2 3 %) 4 *)
+Tree: (expr ( (operationExpr (item ( (operationExpr (item 2) (item 3) (op %)) )) (item 4) (op *)) ))
+
+Expression: (((2 3 +) 4 *) 5 +)
+Tree: (expr ( (operationExpr (item ( (operationExpr (item ( (operationExpr (item 2) (item 3) (op +)) )) (item 4) (op *)) )) (item 5) (op +)) ))
+
+Expression: (((2 3 *) 4 *) 5 +)
+Tree: (expr ( (operationExpr (item ( (operationExpr (item ( (operationExpr (item 2) (item 3) (op *)) )) (item 4) (op *)) )) (item 5) (op +)) ))
+
+Expression: (((2 3 /) 4 *) 5 +)
+Tree: (expr ( (operationExpr (item ( (operationExpr (item ( (operationExpr (item 2) (item 3) (op /)) )) (item 4) (op *)) )) (item 5) (op +)) ))
+
+Expression: (((2 3 -) 4 *) 5 +)
+Tree: (expr ( (operationExpr (item ( (operationExpr (item ( (operationExpr (item 2) (item 3) (op -)) )) (item 4) (op *)) )) (item 5) (op +)) ))
+
+Expression: (((2 3 ^) 4 *) 5 +)
+Tree: (expr ( (operationExpr (item ( (operationExpr (item ( (operationExpr (item 2) (item 3) (op ^)) )) (item 4) (op *)) )) (item 5) (op +)) ))
+
+Expression: (((2 3 %) 4 *) 5 +)
+Tree: (expr ( (operationExpr (item ( (operationExpr (item ( (operationExpr (item 2) (item 3) (op %)) )) (item 4) (op *)) )) (item 5) (op +)) ))
+
+Expression: (((((((((((((((2 3 +) 4 *) 5 -) 6 /) 7 ^) 8 %) 9 +) 10 *) 11 -) 12 /) 13 ^) 14 %) 15 +) 16 *) 17 -) 18 /) 19 ^) 20 %)
+Tree: (expr ( (operationExpr (item ( (operationExpr (item ( (operationExpr (item ( (operationExpr (item ( (operationExpr (item ( (operationExpr (item ( (operationExpr (item ( (operationExpr (item ( (operationExpr (item ( (operationExpr (item ( (operationExpr (item ( (operationExpr (item ( (operationExpr (item ( (operationExpr (item ( (operationExpr (item 2) (item 3) (op +)) )) (item 4) (op *)) )) (item 5) (op -)) )) (item 6) (op /)) )) (item 7) (op ^)) )) (item 8) (op %)) )) (item 9) (op +)) )) (item 10) (op *)) )) (item 11) (op -)) )) (item 12) (op /)) )) (item 13) (op ^)) )) (item 14) (op %)) )) (item 15) (op +)) )) (item 16) (op *)) )) (item 17) (op -)) ))
+

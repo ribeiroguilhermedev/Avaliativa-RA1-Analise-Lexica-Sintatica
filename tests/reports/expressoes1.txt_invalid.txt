@@ -1,0 +1,72 @@
+Expression: (2 3 + MEM)
+Error: extraneous input 'MEM' expecting ')'
+
+Expression: (2 3 * MEM)
+Error: extraneous input 'MEM' expecting ')'
+
+Expression: (2 3 / MEM)
+Error: extraneous input 'MEM' expecting ')'
+
+Expression: (2 3 - MEM)
+Error: extraneous input 'MEM' expecting ')'
+
+Expression: (2 3 ^ MEM)
+Error: extraneous input 'MEM' expecting ')'
+
+Expression: (2 3 % MEM)
+Error: extraneous input 'MEM' expecting ')'
+
+Expression: (2 3 + RES)
+Error: extraneous input 'RES' expecting ')'
+
+Expression: (2 3 * RES)
+Error: extraneous input 'RES' expecting ')'
+
+Expression: (2 3 / RES)
+Error: extraneous input 'RES' expecting ')'
+
+Expression: (2 3 - RES)
+Error: extraneous input 'RES' expecting ')'
+
+Expression: (2 3 ^ RES)
+Error: extraneous input 'RES' expecting ')'
+
+Expression: (2 3 % RES)
+Error: extraneous input 'RES' expecting ')'
+
+Expression: ((2 3 +) 4 MEM)
+Error: mismatched input 'MEM' expecting {'+', '-', '*', '/', '^', '%', '|'}
+
+Expression: ((2 3 *) 4 MEM)
+Error: mismatched input 'MEM' expecting {'+', '-', '*', '/', '^', '%', '|'}
+
+Expression: ((2 3 /) 4 MEM)
+Error: mismatched input 'MEM' expecting {'+', '-', '*', '/', '^', '%', '|'}
+
+Expression: ((2 3 -) 4 MEM)
+Error: mismatched input 'MEM' expecting {'+', '-', '*', '/', '^', '%', '|'}
+
+Expression: ((2 3 ^) 4 MEM)
+Error: mismatched input 'MEM' expecting {'+', '-', '*', '/', '^', '%', '|'}
+
+Expression: ((2 3 %) 4 MEM)
+Error: mismatched input 'MEM' expecting {'+', '-', '*', '/', '^', '%', '|'}
+
+Expression: ((2 3 +) 4 RES)
+Error: mismatched input 'RES' expecting {'+', '-', '*', '/', '^', '%', '|'}
+
+Expression: ((2 3 *) 4 RES)
+Error: mismatched input 'RES' expecting {'+', '-', '*', '/', '^', '%', '|'}
+
+Expression: ((2 3 /) 4 RES)
+Error: mismatched input 'RES' expecting {'+', '-', '*', '/', '^', '%', '|'}
+
+Expression: ((2 3 -) 4 RES)
+Error: mismatched input 'RES' expecting {'+', '-', '*', '/', '^', '%', '|'}
+
+Expression: ((2 3 ^) 4 RES)
+Error: mismatched input 'RES' expecting {'+', '-', '*', '/', '^', '%', '|'}
+
+Expression: ((2 3 %) 4 RES)
+Error: mismatched input 'RES' expecting {'+', '-', '*', '/', '^', '%', '|'}
+

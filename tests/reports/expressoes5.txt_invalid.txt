@@ -1,0 +1,63 @@
+Expression: (((2 3 +) 4 *))
+Error: no viable alternative at input '(((23+)4*))'
+
+Expression: ((((((2 3 +) 4 *) 5 -) 6 /) 7 ^)
+Error: no viable alternative at input '((((((23+)4*)5-)6/)7^)'
+
+Expression: (2 ((3 4 +) 5 *) 6 /)
+Error: extraneous input '6' expecting {'+', '-', '*', '/', '^', '%', '|'}
+
+Expression: (7 ((8 9 *) 10 /) 11 ^)
+Error: extraneous input '11' expecting {'+', '-', '*', '/', '^', '%', '|'}
+
+Expression: (12 ((13 14 -) 15 ^) 16 %)
+Error: extraneous input '16' expecting {'+', '-', '*', '/', '^', '%', '|'}
+
+Expression: (17 ((18 19 +) 20 *) 21 -)
+Error: extraneous input '21' expecting {'+', '-', '*', '/', '^', '%', '|'}
+
+Expression: (22 ((23 24 *) 25 /) 26 ^)
+Error: extraneous input '26' expecting {'+', '-', '*', '/', '^', '%', '|'}
+
+Expression: (27 ((28 29 -) 30 ^) 31 %)
+Error: extraneous input '31' expecting {'+', '-', '*', '/', '^', '%', '|'}
+
+Expression: (32 ((33 34 +) 35 *) 36 -)
+Error: extraneous input '36' expecting {'+', '-', '*', '/', '^', '%', '|'}
+
+Expression: (37 ((38 39 *) 40 /) 41 ^)
+Error: extraneous input '41' expecting {'+', '-', '*', '/', '^', '%', '|'}
+
+Expression: (42 ((43 44 -) 45 ^) 46 %)
+Error: extraneous input '46' expecting {'+', '-', '*', '/', '^', '%', '|'}
+
+Expression: (47 ((48 49 +) 50 *) 51 -)
+Error: extraneous input '51' expecting {'+', '-', '*', '/', '^', '%', '|'}
+
+Expression: (2 (((((3 4 +) 5 *) 6 /) 7 ^) 8 %) 9)
+Error: mismatched input '9' expecting {'+', '-', '*', '/', '^', '%', '|'}
+
+Expression: (10 ((((((11 12 +) 13 *) 14 /) 15 ^) 16 %) 17 +) 18)
+Error: mismatched input '18' expecting {'+', '-', '*', '/', '^', '%', '|'}
+
+Expression: (19 (((((((20 21 +) 22 *) 23 /) 24 ^) 25 %) 26 +) 27 *) 28)
+Error: mismatched input '28' expecting {'+', '-', '*', '/', '^', '%', '|'}
+
+Expression: (29 ((((((((30 31 +) 32 *) 33 /) 34 ^) 35 %) 36 +) 37 *) 38 -) 39)
+Error: mismatched input '39' expecting {'+', '-', '*', '/', '^', '%', '|'}
+
+Expression: (40 (((((((((41 42 +) 43 *) 44 /) 45 ^) 46 %) 47 +) 48 *) 49 -) 50 /) 51)
+Error: mismatched input '51' expecting {'+', '-', '*', '/', '^', '%', '|'}
+
+Expression: (52 ((((((((((53 54 +) 55 *) 56 /) 57 ^) 58 %) 59 +) 60 *) 61 -) 62 /) 63 ^) 64)
+Error: mismatched input '64' expecting {'+', '-', '*', '/', '^', '%', '|'}
+
+Expression: (65 (((((((((((66 67 +) 68 *) 69 /) 70 ^) 71 %) 72 +) 73 *) 74 -) 75 /) 76 ^) 77 %) 78)
+Error: mismatched input '78' expecting {'+', '-', '*', '/', '^', '%', '|'}
+
+Expression: (79 ((((((((((((80 81 +) 82 *) 83 /) 84 ^) 85 %) 86 +) 87 *) 88 -) 89 /) 90 ^) 91 %) 92 +) 93)
+Error: mismatched input '93' expecting {'+', '-', '*', '/', '^', '%', '|'}
+
+Expression: (94 (((((((((((((95 96 +) 97 *) 98 /) 99 ^) 100 %) 101 +) 102 *) 103 -) 104 /) 105 ^) 106 %) 107 +) 108 *) 109)
+Error: mismatched input '109' expecting {'+', '-', '*', '/', '^', '%', '|'}
+

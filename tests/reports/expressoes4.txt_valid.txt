@@ -1,0 +1,168 @@
+Expression: (7.5 2.5 +)
+Tree: (expr ( (operationExpr (item 7.5) (item 2.5) (op +)) ))
+
+Expression: (7.5 (1 6 -) +)
+Tree: (expr ( (operationExpr (item 7.5) (item ( (operationExpr (item 1) (item 6) (op -)) )) (op +)) ))
+
+Expression: ((2 RES) 3 +)
+Tree: (expr ( (operationExpr (item ( (resExpr (item 2) RES) )) (item 3) (op +)) ))
+
+Expression: ((2 RES) (3 87 -) +)
+Tree: (expr ( (operationExpr (item ( (resExpr (item 2) RES) )) (item ( (operationExpr (item 3) (item 87) (op -)) )) (op +)) ))
+
+Expression: (3 (6 RES) +)
+Tree: (expr ( (operationExpr (item 3) (item ( (resExpr (item 6) RES) )) (op +)) ))
+
+Expression: ((3 (5 98 -) +) (6 RES) +)
+Tree: (expr ( (operationExpr (item ( (operationExpr (item 3) (item ( (operationExpr (item 5) (item 98) (op -)) )) (op +)) )) (item ( (resExpr (item 6) RES) )) (op +)) ))
+
+Expression: ((1 RES) MEM)
+Tree: (expr ( (memExpr (item ( (resExpr (item 1) RES) )) MEM) ))
+
+Expression: (5 MEM)
+Tree: (expr ( (memExpr (item 5) MEM) ))
+
+Expression: ((2 (3 6 -) +) MEM)
+Tree: (expr ( (memExpr (item ( (operationExpr (item 2) (item ( (operationExpr (item 3) (item 6) (op -)) )) (op +)) )) MEM) ))
+
+Expression: ((2 8 /) MEM)
+Tree: (expr ( (memExpr (item ( (operationExpr (item 2) (item 8) (op /)) )) MEM) ))
+
+Expression: (MEM (1 RES) ^)
+Tree: (expr ( MEM (item ( (resExpr (item 1) RES) )) (op ^) ))
+
+Expression: (MEM 4 +)
+Tree: (expr ( MEM (item 4) (op +) ))
+
+Expression: (5 3 +)
+Tree: (expr ( (operationExpr (item 5) (item 3) (op +)) ))
+
+Expression: ((2 3 +) 4 *)
+Tree: (expr ( (operationExpr (item ( (operationExpr (item 2) (item 3) (op +)) )) (item 4) (op *)) ))
+
+Expression: (7 MEM)
+Tree: (expr ( (memExpr (item 7) MEM) ))
+
+Expression: ((2 3 *) MEM)
+Tree: (expr ( (memExpr (item ( (operationExpr (item 2) (item 3) (op *)) )) MEM) ))
+
+Expression: ((2 3 +) 4 *)
+Tree: (expr ( (operationExpr (item ( (operationExpr (item 2) (item 3) (op +)) )) (item 4) (op *)) ))
+
+Expression: ((2 (3 4 +) *) MEM)
+Tree: (expr ( (memExpr (item ( (operationExpr (item 2) (item ( (operationExpr (item 3) (item 4) (op +)) )) (op *)) )) MEM) ))
+
+Expression: ((2 (3 4 +) *) (5 RES) +)
+Tree: (expr ( (operationExpr (item ( (operationExpr (item 2) (item ( (operationExpr (item 3) (item 4) (op +)) )) (op *)) )) (item ( (resExpr (item 5) RES) )) (op +)) ))
+
+Expression: ((2 (3 4 +) *) (5 RES) *)
+Tree: (expr ( (operationExpr (item ( (operationExpr (item 2) (item ( (operationExpr (item 3) (item 4) (op +)) )) (op *)) )) (item ( (resExpr (item 5) RES) )) (op *)) ))
+
+Expression: ((2 (3 4 +) *) (5 RES) /)
+Tree: (expr ( (operationExpr (item ( (operationExpr (item 2) (item ( (operationExpr (item 3) (item 4) (op +)) )) (op *)) )) (item ( (resExpr (item 5) RES) )) (op /)) ))
+
+Expression: ((2 (3 4 +) *) (5 RES) -)
+Tree: (expr ( (operationExpr (item ( (operationExpr (item 2) (item ( (operationExpr (item 3) (item 4) (op +)) )) (op *)) )) (item ( (resExpr (item 5) RES) )) (op -)) ))
+
+Expression: ((2 (3 4 +) *) (5 RES) ^)
+Tree: (expr ( (operationExpr (item ( (operationExpr (item 2) (item ( (operationExpr (item 3) (item 4) (op +)) )) (op *)) )) (item ( (resExpr (item 5) RES) )) (op ^)) ))
+
+Expression: ((2 (3 4 +) *) (5 RES) %)
+Tree: (expr ( (operationExpr (item ( (operationExpr (item 2) (item ( (operationExpr (item 3) (item 4) (op +)) )) (op *)) )) (item ( (resExpr (item 5) RES) )) (op %)) ))
+
+Expression: ((2 (3 4 +) *) MEM)
+Tree: (expr ( (memExpr (item ( (operationExpr (item 2) (item ( (operationExpr (item 3) (item 4) (op +)) )) (op *)) )) MEM) ))
+
+Expression: ((2 (3 4 +) *) (MEM 5 +) *)
+Tree: (expr ( (operationExpr (item ( (operationExpr (item 2) (item ( (operationExpr (item 3) (item 4) (op +)) )) (op *)) )) (item ( MEM (item 5) (op +) )) (op *)) ))
+
+Expression: ((2 (3 4 +) *) (MEM 5 -) *)
+Tree: (expr ( (operationExpr (item ( (operationExpr (item 2) (item ( (operationExpr (item 3) (item 4) (op +)) )) (op *)) )) (item ( MEM (item 5) (op -) )) (op *)) ))
+
+Expression: ((2 (3 4 +) *) (MEM 5 /) *)
+Tree: (expr ( (operationExpr (item ( (operationExpr (item 2) (item ( (operationExpr (item 3) (item 4) (op +)) )) (op *)) )) (item ( MEM (item 5) (op /) )) (op *)) ))
+
+Expression: ((2 (3 4 +) *) (MEM 5 ^) *)
+Tree: (expr ( (operationExpr (item ( (operationExpr (item 2) (item ( (operationExpr (item 3) (item 4) (op +)) )) (op *)) )) (item ( MEM (item 5) (op ^) )) (op *)) ))
+
+Expression: ((2 (3 4 +) *) (MEM 5 %) *)
+Tree: (expr ( (operationExpr (item ( (operationExpr (item 2) (item ( (operationExpr (item 3) (item 4) (op +)) )) (op *)) )) (item ( MEM (item 5) (op %) )) (op *)) ))
+
+Expression: (2 3 +)
+Tree: (expr ( (operationExpr (item 2) (item 3) (op +)) ))
+
+Expression: (2 3 *)
+Tree: (expr ( (operationExpr (item 2) (item 3) (op *)) ))
+
+Expression: (2 3 /)
+Tree: (expr ( (operationExpr (item 2) (item 3) (op /)) ))
+
+Expression: (2 3 -)
+Tree: (expr ( (operationExpr (item 2) (item 3) (op -)) ))
+
+Expression: (2 3 ^)
+Tree: (expr ( (operationExpr (item 2) (item 3) (op ^)) ))
+
+Expression: (2 3 %)
+Tree: (expr ( (operationExpr (item 2) (item 3) (op %)) ))
+
+Expression: (2 MEM)
+Tree: (expr ( (memExpr (item 2) MEM) ))
+
+Expression: (2 RES)
+Tree: (expr ( (resExpr (item 2) RES) ))
+
+Expression: ((2 3 +) MEM)
+Tree: (expr ( (memExpr (item ( (operationExpr (item 2) (item 3) (op +)) )) MEM) ))
+
+Expression: ((2 3 *) MEM)
+Tree: (expr ( (memExpr (item ( (operationExpr (item 2) (item 3) (op *)) )) MEM) ))
+
+Expression: ((2 3 /) MEM)
+Tree: (expr ( (memExpr (item ( (operationExpr (item 2) (item 3) (op /)) )) MEM) ))
+
+Expression: ((2 3 -) MEM)
+Tree: (expr ( (memExpr (item ( (operationExpr (item 2) (item 3) (op -)) )) MEM) ))
+
+Expression: ((2 3 ^) MEM)
+Tree: (expr ( (memExpr (item ( (operationExpr (item 2) (item 3) (op ^)) )) MEM) ))
+
+Expression: ((2 3 %) MEM)
+Tree: (expr ( (memExpr (item ( (operationExpr (item 2) (item 3) (op %)) )) MEM) ))
+
+Expression: ((2 3 +) RES)
+Tree: (expr ( (resExpr (item ( (operationExpr (item 2) (item 3) (op +)) )) RES) ))
+
+Expression: ((2 3 *) RES)
+Tree: (expr ( (resExpr (item ( (operationExpr (item 2) (item 3) (op *)) )) RES) ))
+
+Expression: ((2 3 /) RES)
+Tree: (expr ( (resExpr (item ( (operationExpr (item 2) (item 3) (op /)) )) RES) ))
+
+Expression: ((2 3 -) RES)
+Tree: (expr ( (resExpr (item ( (operationExpr (item 2) (item 3) (op -)) )) RES) ))
+
+Expression: ((2 3 ^) RES)
+Tree: (expr ( (resExpr (item ( (operationExpr (item 2) (item 3) (op ^)) )) RES) ))
+
+Expression: ((2 3 %) RES)
+Tree: (expr ( (resExpr (item ( (operationExpr (item 2) (item 3) (op %)) )) RES) ))
+
+Expression: ((2 3 +) 4 *)
+Tree: (expr ( (operationExpr (item ( (operationExpr (item 2) (item 3) (op +)) )) (item 4) (op *)) ))
+
+Expression: ((2 3 *) 4 *)
+Tree: (expr ( (operationExpr (item ( (operationExpr (item 2) (item 3) (op *)) )) (item 4) (op *)) ))
+
+Expression: ((2 3 /) 4 *)
+Tree: (expr ( (operationExpr (item ( (operationExpr (item 2) (item 3) (op /)) )) (item 4) (op *)) ))
+
+Expression: ((2 3 -) 4 *)
+Tree: (expr ( (operationExpr (item ( (operationExpr (item 2) (item 3) (op -)) )) (item 4) (op *)) ))
+
+Expression: ((2 3 ^) 4 *)
+Tree: (expr ( (operationExpr (item ( (operationExpr (item 2) (item 3) (op ^)) )) (item 4) (op *)) ))
+
+Expression: ((2 3 %) 4 *)
+Tree: (expr ( (operationExpr (item ( (operationExpr (item 2) (item 3) (op %)) )) (item 4) (op *)) ))
+
